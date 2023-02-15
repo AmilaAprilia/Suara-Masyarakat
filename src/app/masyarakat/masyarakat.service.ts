@@ -11,7 +11,7 @@ export class MasyarakatService {
   constructor(private http: HttpClient) { }
 
 
-  loginMasyatakat(masyarakat :loginMasyarakat){
+  loginMasyarakat(masyarakat :loginMasyarakat){
     return this.http.post(`${environment.baseUrl}/Users`,
     masyarakat, {observe : "response"})
   }

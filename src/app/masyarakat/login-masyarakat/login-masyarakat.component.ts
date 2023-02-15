@@ -23,7 +23,7 @@ export class LoginMasyarakatComponent implements OnInit {
   submit(){
    let masyarakat : loginMasyarakat = this.loginMasyarakat
    if(this.loginMasyarakat){
-    this.masyarakatService.loginMasyatakat(masyarakat).subscribe(Response => {
+    this.masyarakatService.loginMasyarakat(masyarakat).subscribe(Response => {
       if(Response.status== 200){
         alert("Berhasil Login")
         this.router.navigate(['/','tampilan-masyarakat'])
