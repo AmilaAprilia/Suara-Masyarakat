@@ -10,9 +10,5 @@ export class AdminService {
 
   constructor(private http : HttpClient) { }
 
-  loginAdmin(admin : loginAdmin){
-    return this.http.post(`${environment.baseUrl}/login/users`,
-    admin, {observe : "response"})
-  }
 
 }
