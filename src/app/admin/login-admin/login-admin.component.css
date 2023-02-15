@@ -1,0 +1,13 @@
+/* .ml-3{
+    color: aliceblue;
+    width: 30%;
+    height: 15%;
+} */
+body{background-color: #EFE9E3}
+.card{border: none;height: 100px ;}
+.forms-inputs{position: relative ; background-color: #EFE9E3;}
+.forms-inputs span{position: absolute;top:-18px;left: 10px;background-color: #EFE9E3;padding: 5px 10px;font-size: 15px; }
+.forms-inputs input{height: 50px; width: 400px; border: 2px solid #262640 ; background-color: #EFE9E3;}
+.forms-inputs input:focus{box-shadow: none;outline: none;border: 2px solid #000}.btn{height: 50px}
+.success-data{display: flex;flex-direction: column}
+.bxs-badge-check{font-size: 90px}

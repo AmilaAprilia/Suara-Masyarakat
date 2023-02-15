@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background: #262640;">
+    <a class="navbar-brand" href=""><img src="assets/img/lg.png" alt="" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li>
+                    <img src="assets/img/menu.png" alt="" class="btn" width="70px" (click)="diterima()">
+                </li>
+                <li>
+                    <img src="assets/img/icon.png" alt="" class="btn" width="70px">
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="background-color: #EFE9E3;">
+    <br>
+    <br>
+    <br>
+    <h1 class="d-flex ml-5" >Data Diri</h1>
+    <br>
+    <br>
+    <table class="ml-5">
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input type="text " class="ml-3" style="background-color: #262640;" width="1500px" [(ngModel)]="loginMasyarakat.username"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Nik</td>
+            <td>:</td>
+            <td><input type="text" class="ml-3" style="background-color: #262640;" [(ngModel)]="loginMasyarakat.nik"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>No Telepon</td>
+            <td>:</td>
+            <td><input type="text" class="ml-3" style="background-color: #262640;" [(ngModel)]="loginMasyarakat.nomor"></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><input type="text" class="ml-3" style="background-color: #262640;" [(ngModel)]="loginMasyarakat.alamat"></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>  
+    <li class="d-flex justify-content-around">
+        <img src="assets/img/Sumbit.png" alt="" class="btn" width="300px" (click)="submit()">
+    </li>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
