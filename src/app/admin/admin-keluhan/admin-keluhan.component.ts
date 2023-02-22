@@ -16,5 +16,14 @@ export class AdminKeluhanComponent implements OnInit {
   diterima(){
     this.router.navigate([''])
   }  
+
+  print(){
+    alert("Berhasil Print")
+  }
+
+  logout(){
+    alert("Logout")
+    this.router.navigate([''])
+  }
 }
 

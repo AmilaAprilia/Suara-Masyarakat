@@ -21,6 +21,7 @@ export class LoginAdminComponent implements OnInit {
   }
 
   oke(){
+    alert("Berhasil Login")
     this.router.navigate(['admin-keluhan'])
   }
 
