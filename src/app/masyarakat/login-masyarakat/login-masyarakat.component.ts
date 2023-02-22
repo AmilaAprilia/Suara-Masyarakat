@@ -11,33 +11,24 @@ import { MasyarakatService } from '../masyarakat.service';
 export class LoginMasyarakatComponent implements OnInit {
 
   loginMasyarakat = new loginMasyarakat ()
-
   constructor(
-    private router: Router, 
-    private masyarakatService: MasyarakatService) 
-    { }
+    private masyarakatService : MasyarakatService,
+    private router : Router
+    ){}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
+    
 
-  submit(){
-   let masyarakat : loginMasyarakat = this.loginMasyarakat
+  tampilan(){
+   let username = this.loginMasyarakat
    if(this.loginMasyarakat){
-    this.masyarakatService.loginMasyarakat(masyarakat).subscribe(Response => {
-      if(Response.status== 200){
-        alert("Berhasil Login")
-        this.router.navigate(['/','tampilan-masyarakat'])
-      }else{
-        alert("Gagal Login")
-      }
+    this.masyarakatService.loginMasyarakat(username).subscribe(response => {
+      this.router.navigate(['tampilan-masyarakat'])
     })
   }
-}
-  tampilan(){
-    this.router.navigate(['tampilan-masyarakat'])
   }
 
   diterima(){
     this.router.navigate([''])
-  }  
+  }
 }

@@ -33,30 +33,28 @@
         <tr>
             <td>Alamat Keluhan </td>
             <td>:</td>
-            <td><input type="text" class="ml-3" style="background-color: #262640;" width="1500px"></td>
-        </tr>
-        <br>
-        <tr>
-            <td>Alamat</td>
-            <td>:</td>
-            <td><input type="text" class="ml-3" style="background-color: #262640;"></td>
+            <td><input type="text" class="ml-3" style="background-color: #262640;" width="1500px" ([ngModel])="tampilanMasyarakat.alamat"></td>
         </tr>
         <br>
         <tr>
             <td>Deskripsi</td>
             <td>:</td>
-            <td><textarea class="ml-3" cols="80" rows="8" maxlength="300" style="background-color: #262640;"></textarea></td>
+            <td><textarea class="ml-3" cols="70" rows="6" maxlength="300" style="background-color: #262640;" ([ngModel])="tampilanMasyarakat.deskripsi"></textarea></td>
         </tr>
         <br>
         <tr>
             <td>Bukti Keluhan</td>
             <td>:</td>
-            <td><input type="file" class="ml-4"></td>
+            <td><input type="file" class="ml-4" ([ngModel])="tampilanMasyarakat.gambar"></td>
         </tr>
     </table>
     <br>
     <li class="d-flex justify-content-around">
-        <img src="assets/img/kirim.jpg" alt="" class="btn" width="170px" (click)="terkirim()">
+        <img src="assets/img/kirim.jpg" alt="" class="btn" width="150px" (click)="lanjut()">
     </li>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
 </body>

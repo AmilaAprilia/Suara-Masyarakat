@@ -6,3 +6,10 @@ export class loginMasyarakat {
     nomor: number;
     constructor() {}
 }
+
+export class tampilanMasyarakat {
+    alamat: string;
+    deskripsi: Text;
+    gambar: null;
+    constructor() {}
+}

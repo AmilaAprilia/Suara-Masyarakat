@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { tampilanMasyarakat } from '../masyarakat.model';
+import { MasyarakatService } from '../masyarakat.service';
 
 @Component({
   selector: 'app-tampilan-masyarakat',
@@ -8,16 +10,33 @@ import { Router } from '@angular/router';
 })
 export class TampilanMasyarakatComponent implements OnInit {
 
-  constructor(private router : Router) { }
+  tampilanMasyarakat = new tampilanMasyarakat ()
+  constructor(private router : Router, private masyarakatService : MasyarakatService) { }
 
   ngOnInit(): void {
-  }
-
-  terkirim(){
-    this.router.navigate(['terkirim-masyarakat'])
   }
 
   diterima(){
     this.router.navigate([''])
   }
+  
+  masuk(){
+    let alamat = this.tampilanMasyarakat
+    if(this.tampilanMasyarakat){
+     this.masyarakatService.tampilanMasyarakat(alamat).subscribe(response => {
+      if(response== 200){
+        alert("Berhasil Menyimpan Keluhan")
+        this.router.navigate(['terkirim-masyarakat'])
+      }else{
+        alert("Gagal Menyimpan Keluhan")
+      }
+     })
+   }
+   }
+
+   lanjut(){
+    alert("Berhasil Menyimpan Keluhan")
+    this.router.navigate(['terkirim-masyarakat'])
+  }
+
 }

@@ -1,11 +1,11 @@
 const PROXY_CONFIG = [
     {
       context:[
-        "/api"
+        "/sumar"
       ],
-      target: "http://localhost:80/sumar",
+      target: "http://localhost:80",
       pathRewrite : {
-      "^/api" : ""
+      "^/sumar":"/sumar"
       },
       changeOrigin : true,
       secure : false
